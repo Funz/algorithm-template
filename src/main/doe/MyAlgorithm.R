@@ -2,7 +2,7 @@
 #author: ...
 #ref: ...
 #tags: ...
-#options: ytarget='0.0';ytol='3.e-8';xtol='1.e-8';xsample_size='10';max_iterations='100'
+#options: ytarget='0.0';ytol='3.e-8';xtol='1.e-8';xsample_size='10';max_iterations='10'
 #input: x=list(min=0,max=1)
 #output: y=0.01
 
@@ -41,9 +41,10 @@ getNextDesign <- function(myAlgorithm, X, Y) {
 
     if (myAlgorithm$i >= myAlgorithm$max_iterations) {
         return(NULL)
-    }
+    } else 
+        myAlgorithm$i = myAlgorithm$i+1
 
-    Xnext = matrix(runif(myAlgorithm$xsample_size * length(input)),ncol=length(input))
+    Xnext = matrix(runif(myAlgorithm$xsample_size * length(myAlgorithm$input)),ncol=length(myAlgorithm$input))
     names(Xnext) <- names(myAlgorithm$input)
     return(from01(Xnext,myAlgorithm$input))
 }
