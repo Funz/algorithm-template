@@ -58,7 +58,7 @@ displayResults <- function(myAlgorithm, X, Y) {
     width <- 500
 
     png(file = myAlgorithm$files,        height = height,        width = width)
-    pairs(cbind(X,Y)
+    pairs(cbind(X,Y))
     dev.off()
 
     html <- paste0(' <HTML name="SomeInfo">Here is some information in the end','<br/>',
