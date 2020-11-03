@@ -17,6 +17,7 @@ root.f = 0.5
 test = function(algorithm_file) {
     results = run.algorithm(algorithm_file, options=NULL,fun=list(input=input.f,output=output.f,fun=f))
     library(testthat)
-    test_that("cos_pi root",{expect_equal(as.numeric(results$root),root.f,tolerance = .0001)})
+    # Replace following test by something suitable
+    #test_that("cos_pi info",{expect_equal(as.numeric(results$info),root.f,tolerance = .0001)})
 }
 
