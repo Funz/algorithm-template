@@ -18,6 +18,6 @@ test = function(algorithm_file) {
     results = run.algorithm(algorithm_file, options=NULL,fun=list(input=input.f,output=output.f,fun=f))
     library(testthat)
     # Replace following test by something suitable
-    #test_that("cos_pi info",{expect_equal(as.numeric(results$info),root.f,tolerance = .0001)})
+    #if (!isTRUE(test_that("cos_pi info",{expect_equal(as.numeric(results$info),root.f,tolerance = .0001)}))) quit(status=1)
 }
 
