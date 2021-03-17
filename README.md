@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Funz/algorithm-MyAlgorithm.png)](https://travis-ci.org/Funz/algorithm-MyAlgorithm)
+[![.github/workflows/ant.yml](https://github.com/Funz/algorithm-MyAlgorithm/actions/workflows/ant.yml/badge.svg)](https://github.com/Funz/algorithm-MyAlgorithm/actions/workflows/ant.yml)
 
 ___This repositry is intended to be forked as a basis for an new algorithm implementation.___
 ___You can search for "MyAlgorithm" as a key to replace everywhere in this directory.___
